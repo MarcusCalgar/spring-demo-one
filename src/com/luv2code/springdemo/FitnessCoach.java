@@ -14,8 +14,18 @@ public class FitnessCoach implements Coach {
 	}
 
 	@Override
-	public String getDailyFortune() {		
+	public String getDailyFortune() {
 		return fortuneService.getFortune();
+	}
+
+	// add an init method
+	public void initializer() {
+		System.out.println("FitnessCoach: inside initializer method");
+	}
+
+	// add a destroy method
+	public void destroyer() {
+		System.out.println("FitnessCoach: inside destroyer method");
 	}
 
 }
